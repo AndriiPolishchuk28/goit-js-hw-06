@@ -8,10 +8,10 @@ formRef.addEventListener('submit', event => {
     const password = form.elements.password.value;
     if (email !== '' && password !== '') {
         data.email = email,
-        data.password = password    
+            data.password = password;
+            console.log(data);
     } else {
         alert('Please fill out all fields')
     }
-    console.log(data);
     form.reset();
 })
